@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
@@ -12,6 +12,17 @@ import rus from "../../public/navbar/rus.svg";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
+const saveScrollPosition = () => {
+  sessionStorage.setItem("scrollPosition", window.scrollY.toString());
+};
+
+const restoreScrollPosition = () => {
+  const scrollPosition = sessionStorage.getItem("scrollPosition");
+  if (scrollPosition) {
+    window.scrollTo(0, parseInt(scrollPosition, 10));
+  }
+};
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [showServices, setShowServices] = useState(false);
@@ -20,6 +31,10 @@ const Navbar = () => {
 
   const t = useTranslations("Navbar");
   const hero = useTranslations("Hero");
+
+  useEffect(() => {
+    restoreScrollPosition();
+  }, []);
 
   return (
     <>
@@ -95,6 +110,7 @@ const Navbar = () => {
                 alt="eng"
                 width={20}
                 className="cursor-pointer"
+                onClick={saveScrollPosition}
               />
             </Link>
             <Link href="/ru" className="w-full">
@@ -103,6 +119,7 @@ const Navbar = () => {
                 alt="rus"
                 width={20}
                 className="cursor-pointer"
+                onClick={saveScrollPosition}
               />
             </Link>
           </div>
@@ -192,13 +209,19 @@ const Navbar = () => {
               {showLanguage && (
                 <div className="absolute top-full flex flex-col gap-2 py-4 w-32 items-start justify-center bg-white rounded-lg shadow-md">
                   <Link href="/en" className="w-full">
-                    <div className="cursor-pointer flex items-center gap-4  transition-all hover:bg-[#1b5bf7] hover:text-white w-full px-5 py-2">
+                    <div
+                      onClick={saveScrollPosition}
+                      className="cursor-pointer flex items-center gap-4  transition-all hover:bg-[#1b5bf7] hover:text-white w-full px-5 py-2"
+                    >
                       <Image src={eng} alt="eng" width={20} />
                       <p className="text-sm">Eng</p>
                     </div>
                   </Link>
                   <Link href="/ru" className="w-full">
-                    <div className="cursor-pointer flex items-center gap-4  transition-all hover:bg-[#1b5bf7] hover:text-white w-full px-5 py-2">
+                    <div
+                      onClick={saveScrollPosition}
+                      className="cursor-pointer flex items-center gap-4  transition-all hover:bg-[#1b5bf7] hover:text-white w-full px-5 py-2"
+                    >
                       <Image src={rus} alt="rus" width={20} />
                       <p className="text-sm">Рус</p>
                     </div>
