@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "swiper/swiper-bundle.css";
+
+* {
+  scroll-behavior: smooth;
+}
+
+.primary_color {
+  color: #1b5bf7;
+}
+.bg_primary_color {
+  background-color: #1b5bf7;
+}
+
+.secondary_color {
+  color: #f4f7ff;
+}
+
+.bg_secondary_color {
+  background-color: #f4f7ff;
+}
+
+.bg_third_color {
+  background-color: #e0e8ff;
+}
