@@ -1,0 +1,108 @@
+{
+  "Hero": {
+    "title": "IT-Outsourcing Company",
+    "subtitle1": "Development of mobile applications",
+    "subtitle2": "Development and implementation of ERP systems",
+    "subtitle3": "User interface, User experience design",
+    "subtitle4": "Optimization of IT consulting infrastructure",
+    "subtitle5": "IT consulting",
+    "contactBtn": "Contact"
+  },
+  "Navbar": {
+    "navItem1": "Direction",
+    "navItem2": "Command",
+    "navItem3": "Services",
+    "navItem4": "Tools",
+    "navItem5": "Clients",
+    "navItem6": "Portfolio",
+    "navItem7": "Language",
+    "contactBtn": "Contact"
+  },
+  "Services": {
+    "title": "Our Services",
+    "service1": "Team",
+    "service2": "Development of mobile applications",
+    "service3": "Development and implementation of ERP systems",
+    "service4": "User interface, User experience design",
+    "service5": "Optimization of IT consulting infrastructure",
+    "service6": "IT consulting"
+  },
+  "Team": {
+    "title": "Team",
+    "subtitle": "For each project, we form a team that includes a project manager, business analyst, UI / UX designer, DevOps, QA engineer, backend and front-end developers.",
+    "smallText": "Dedicated team"
+  },
+  "MobileApps": {
+    "title": "Development of mobile applications",
+    "subtitle": "In collaboration with startups, we have learned how to create a creative and functional user interface for mobile applications.",
+    "technologies": "Technologies"
+  },
+  "ERP": {
+    "title": "ERP systems",
+    "subtitle": "IT Systems of any level of complexity at a convenient time for you"
+  },
+  "UX": {
+    "title": "UI/UX design",
+    "subtitle": "Our company takes a human-centered approach to design",
+    "technologies": "Technologies"
+  },
+  "Optimization": {
+    "title": "Optimization of infrastructure",
+    "subtitle": "Our experienced professionals will help you optimize your infrastructure"
+  },
+  "Consulting": {
+    "title": "IT consulting",
+    "subtitle": "We can improve the qualifications of your employees thereby increasing the efficiency of your company"
+  },
+  "Tools": {
+    "title": "Tools"
+  },
+  "Clients": {
+    "title": "Our clients"
+  },
+  "Delever": {
+    "goal": "Delivery",
+    "desc": "Delever - Delivery service automation targeted at both consumers and restaurants.",
+    "subtitle": "What we did?"
+  },
+  "Sms": {
+    "goal": "Notification",
+    "desc": "Smsuz.uz - It is a platform for bulk SMS messaging.",
+    "subtitle": "What we did?"
+  },
+  "Goodzone": {
+    "goal": "E-Commerce",
+    "desc": "Goodzone - Internet shop of household appliances in Uzbekistan.",
+    "subtitle": "What we did?"
+  },
+  "Iman": {
+    "goal": "Finance",
+    "desc": "Iman - It is a mutual financing platform based on the principles of Islamic Finance. Buyers, sellers and investors meet here.",
+    "subtitle": "What we did?"
+  },
+  "WorkingProcess": {
+    "title": "How we work!",
+    "work1": "Contact",
+    "work2": "Analysis",
+    "work3": "Offer",
+    "work4": "Team",
+    "work5": "Start",
+    "subtitle1": "Send us your project request or project idea.",
+    "subtitle2": "We will contact you to clarify your project requirements.",
+    "subtitle3": "We will provide you with our free, non-binding application.",
+    "subtitle4": "We provide a team for your requirements.",
+    "subtitle5": "You will get to know the team and we'll get started."
+  },
+  "Contact": {
+    "title": "Contact us",
+    "subtitle": "Leave us a message",
+    "name": "Name",
+    "email": "Your email",
+    "project": "Briefly describe your project",
+    "sendBtn": "Send"
+  },
+  "Footer": {
+    "aboutUs": "About us",
+    "copyright": "All rights reserved"
+  }
+}
